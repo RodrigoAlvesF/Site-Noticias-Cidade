@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet", Helvetica, sans-serif;
+    background: #fff url(../img/fundo.png) repeat-x;
+}
+
+#container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 150px;
+    padding-top: 30px;
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../img/logo.png) center;  
+    text-indent: -3000px;  
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#topo ul { /*Editar a ul que está dentro do ID TOPO*/
+    margin-top: 30px; /*Espaçar a lista da logo*/
+    background: #b10333;
+    float: left; /*Para não perdermos o background devemos colocar o float da UL igual ao do LI*/
+}
+
+#topo ul li { /*Selecionar os LI que estão dentro de UL que estão dentro do TOPO*/
+
+    float: left; /*Para horizontar, aplicamos float na LI*/
+}
+
+#topo ul a { /*links que estão dentro da ul que está dentro do topo*/
+
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em; /*Separar os links e aumentar os espaços superiores*/
+    line-height: 2.1em; /*aumentar mais a altura da barra*/
+    text-decoration: none; /*remover sublinhado*/
+    color: white; /*cor da fonte*/
+    background: url(../img/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a{ /*Formatar link que tem a class primeiro que está na ul do topo*/
+    background: none;
+}
+
+#topo ul a:hover { /*formatar os links que estão em UL do TOPO quando passamos o mouse em cima*/
+    color: #69001d;
+}
+
+body.home #Navegação-topo a#home, 
+body.brasil #Navegação-topo a#brasil,
+body.internacional #Navegação-topo a#internacional,
+body.economia #Navegação-topo a#economia,
+body.saude #Navegação-topo a#saude,
+body.ciencia #Navegação-topo a#ciencia,
+body.fotos #Navegação-topo a#fotos
+{ /*Selecionar a class home aplicada ao body, em seguida selecionar a navegação e o id home que está no link*/
+    color: #fff;
+    background: #de003e;
+}
