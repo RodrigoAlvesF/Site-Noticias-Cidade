@@ -4,13 +4,11 @@
 }
 
 body {
-    border: 1px solid #b10333;
     font-family: "Trebuchet", Helvetica, sans-serif;
     background: #fff url(../img/fundo.png) repeat-x;
 }
 
 #container {
-    border: 1px solid #b10333;
     width: 750px;
     margin: 0 auto;
 }
@@ -105,7 +103,8 @@ h2 {
 #lateral ul a {
     text-decoration: none;
     list-style: none;
-    padding: 10px 10px;
+    padding: 3px; /*Espaçar um pouco o texto da borda*/
+    line-height: 30px; /*Altura da caixa sem mexer no tamanho da font*/
     display: block;
     color: black;
     font-size: 0.9em;
@@ -114,19 +113,40 @@ h2 {
 #lateral ul a:hover {
     text-decoration: none;
     list-style: none;
-    padding: 10px 25px;
+    padding: 3px; /*Espaçar um pouco o texto da borda*/
+    padding-left: 20px; /*Mover texto selecionado para o lado*/
+    line-height: 30px; /*Altura da caixa sem mexer no tamanho da font*/
     display: block;
-    color: rgb(97, 97, 97);
+    color: #a1a1a1;
     font-size: 0.9em;
+    background: url(../img/marcador.png) no-repeat left center;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    margin: 5px 0 5px 0;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background: white;
+    border: 1px solid #a5cdf8;
+}
+
+input.submit { /*Botão de enviar forms*/
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 1px;    
 }
 
 .caixa { /*Criamos uma box de conteúdo pois todos serão iguais*/
     margin: 10px 0;
     padding: 5px;
-}
-
-.caixa-conteudo {
-    color: black;
 }
 
 #primario { /*O primario seguirá um padrão e as vertentes não precisa repetir as características padrões*/
@@ -152,6 +172,57 @@ h2 {
     width: 270px;
     float: left;
     margin: 0 0 20px 15px; /*Ordem de colocação: top > right > bottom > left*/
+}
+
+#secundario h3 {
+    position: relative;
+    left: 25%;
+}
+
+/*Podemos usar também display inline e centralizar com margin*/
+
+#primario h3 {
+    position: relative;
+    left: 5%;
+}
+
+h3 {
+   text-transform: uppercase;
+   display: inline;
+   padding: 2px;
+   letter-spacing: -0.4px;
+   font-size: 0.9em;
+}
+
+.destaque h2 { /*criando uma classe e colocando o h2 NA FRENTE, podemos usar várias class na mesma div, então todos os h2 que estiverem dentro da div com a class terá a formatação.*/
+    text-align: center;
+}
+
+.destaque h3 { /*criando uma classe e colocando o h3 NA FRENTE, podemos usar várias class na mesma div, então todos os h3 que estiverem dentro da div com a class terá a formatação.*/
+    background: rgb(170, 0, 0);
+    color: white;
+}
+
+/*Criei uma classe "conteudo-colunas" para formatar os links e paragráfos de forma padrão em todos os conteúdos das colunas principais.*/
+
+.conteudo-colunas a{
+    color: #970000;
+    display: block;
+    text-align: center;
+} 
+
+.conteudo-colunas p {
+    display: block;
+    text-align: center;
+}
+
+img {
+    border: 2px solid #dfdfdf;
+}
+
+img.imagem-principal{
+    border: 3px solid #dfdfdf;
+    width: 98%;
 }
 
 #container-rodape { 
