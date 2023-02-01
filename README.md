@@ -1,3 +1,3 @@
 # Projeto Noticias Cidade
 
-Projeto criado com auxílio do curso Programação Web
+Projeto criado com auxílio do curso Programação Web da plataforma Udemy.
