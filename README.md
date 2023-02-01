@@ -2,4 +2,4 @@
 
 Usado somente HTML + CSS
 
-Link: https://rodrigoalvesf.github.io/Projeto-Noticias-Cidade/
+<a href = "https://rodrigoalvesf.github.io/Projeto-Noticias-Cidade/"> Veja o site </a>
