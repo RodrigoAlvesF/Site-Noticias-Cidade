@@ -1,3 +1,3 @@
-# Projeto Noticias Cidade (HTML + CSS)
+# Projeto Noticias Cidade
 
-Projeto criado com auxílio do curso Programação Web da plataforma Udemy.
+Link: https://rodrigoalvesf.github.io/Projeto-Noticias-Cidade/
