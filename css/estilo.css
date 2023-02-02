@@ -155,6 +155,45 @@ input.submit { /*Botão de enviar forms*/
     margin: 0 0 20px 195px; /*195 para dar espaço para a coluna lateral que tem 180 + 15 de espaço entre elas*/
 }
 
+#lista-noticias li {
+    padding: 2px;
+    height: 65px;
+}
+
+#lista-noticias li a img{ /*Posicionamos para a esquerda com o float e centralizamos melhor com a margin*/
+    float: left;
+    margin: 3px;
+    width: 80px;
+}
+
+#lista-noticias li a{ 
+    text-decoration: none;
+}
+
+#lista-noticias li a h3{ 
+    font-size: 0.7em;
+    color: #3e7ab9;
+    float: left;
+    position: static;
+    display: contents;
+}
+
+#lista-noticias li a p{ 
+    font-size: 0.7em;
+    color: black;
+}
+
+#lista-noticias li:hover{ 
+    text-decoration: none;
+    background: #f0f0f0;
+}
+
+
+/*#lista-noticias h3 {
+    border: 1px solid red;
+}*/
+
+
 #duas-colunas #primario { /*o primario dentro do id duas colunas*/
     width: 555px; /*Só altera a largura*/
 }
@@ -194,7 +233,11 @@ h3 {
    font-size: 0.9em;
 }
 
-.destaque h2 { /*criando uma classe e colocando o h2 NA FRENTE, podemos usar várias class na mesma div, então todos os h2 que estiverem dentro da div com a class terá a formatação.*/
+#primario h2 { /*criando uma classe e colocando o h2 NA FRENTE, podemos usar várias class na mesma div, então todos os h2 que estiverem dentro da div com a class terá a formatação.*/
+    text-align: center;
+}
+
+#secundario h2 { /*criando uma classe e colocando o h2 NA FRENTE, podemos usar várias class na mesma div, então todos os h2 que estiverem dentro da div com a class terá a formatação.*/
     text-align: center;
 }
 
@@ -233,6 +276,6 @@ img.imagem-principal{
 #rodape {
     width: 750px;
     margin: 0 auto;
-    color: black;
-    font-size: 12px;
+    color: white;
+    font-size: 13px;
 }
