@@ -201,11 +201,9 @@ input.submit { /*Botão de enviar forms*/
 /*duas coluna e uma coluna são as vertentes*/
 
 #uma-coluna #primario { /*o primario dentro do id duas colunas*/
-    width: 555px;
+    width: 100%;
     margin: 0 0 20px; /*Altera a largura e margin*/
 }
-
-
 
 #secundario {
     width: 270px;
